@@ -25,10 +25,19 @@ public class aula10 {
         }        
         return m;
     }
+    public static double fatorial(double numero){
+        double f = 1;
+        for (int i = 1; i <= numero; i++){
+            f = (f*i);
+        }
+        return f;
+    }
+    
     public static void main(String[] args) {
         System.out.println(somaEntre(1, 10));
         System.out.println(somaEntre(10,12));
         System.out.println(somaEntre(2,9));
         System.out.println(media(1,2,5,'A'));
+        System.out.println(fatorial(5));
     }
 }
